@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(1); // 1 = "Game" Scene 
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0); // 0 = "Main Menu" Scene 
+        }
     }
 
     public void GameOver()
