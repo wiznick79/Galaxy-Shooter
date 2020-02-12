@@ -93,8 +93,8 @@ public class Player : MonoBehaviour
             transform.Translate(direction * (_speed * _speedMultiplier) * Time.deltaTime);
         }
 
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -3.8f, 0), 0);
- 
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -9.3f, 9.3f), Mathf.Clamp(transform.position.y, -3.8f, 1.5f), 0);
+        /*
         if (transform.position.x > 11.24f)
         {
             transform.position = new Vector3(-11.24f, transform.position.y, 0);
@@ -103,6 +103,7 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3(11.24f, transform.position.y, 0);
         }
+        */
     }
 
     void FireLaser()
