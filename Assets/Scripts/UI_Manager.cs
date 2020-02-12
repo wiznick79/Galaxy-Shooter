@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UI_Manager : MonoBehaviour
 {
     [SerializeField]
-    private Text _scoreText;
+    private TextMeshProUGUI _scoreText;
     [SerializeField]
     private Image _LivesImg;
     [SerializeField]
     private Sprite[] _liveSprites;
     [SerializeField]
-    private Text _gameOverText;
+    private TextMeshProUGUI _gameOverText;
     [SerializeField]
-    private Text _restartText;
+    private TextMeshProUGUI _restartText;
     private GameManager _gameManager;
 
     // Start is called before the first frame update
@@ -63,10 +64,10 @@ public class UI_Manager : MonoBehaviour
     {
         while (true)
         {
-            _gameOverText.GetComponent<Text>().color = Color.blue;
-            yield return new WaitForSeconds(0.5f);
-            _gameOverText.GetComponent<Text>().color = Color.red;
-            yield return new WaitForSeconds(0.5f);
+            _gameOverText.GetComponent<TextMeshProUGUI>().faceColor = Color.yellow;
+            yield return new WaitForSeconds(0.4f);
+            _gameOverText.GetComponent<TextMeshProUGUI>().faceColor = Color.black;
+            yield return new WaitForSeconds(0.4f);
         }
     }
 }

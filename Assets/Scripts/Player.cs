@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float _speed = 5.0f;
     [SerializeField]
-    private float _speedMultiplier = 1.7f;
+    private float _speedMultiplier = 1.5f;
     [SerializeField]
     private GameObject _laserPrefab;
     [SerializeField]

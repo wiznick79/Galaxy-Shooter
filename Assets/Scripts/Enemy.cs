@@ -74,6 +74,7 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        _canFire = Time.time + _fireRate;
         if (other.tag.Equals("Laser"))
         {
             Destroy(other.gameObject);
