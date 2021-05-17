@@ -1055,7 +1055,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyPrefab:
   - {fileID: 8333618928518181299, guid: dd28764aa405b2941a0df8cb2b86ffcd, type: 3}
+  - {fileID: 5769108795884724024, guid: f8f635c6a7ddde04f9c623c80d38f0fd, type: 3}
+  - {fileID: 3720760561052235586, guid: e8ed901b40bb5fa47870307143332ecc, type: 3}
   - {fileID: 3416661380976213284, guid: 8e920e18524f962469e97f23aa83b5e6, type: 3}
+  - {fileID: 2992084176482200039, guid: 385751ad529f5c54191d218bb39b2eb1, type: 3}
   _enemyContainer: {fileID: 548212459}
   _powerups:
   - {fileID: 7826033263073997409, guid: 08de78ebce41a5a46b3c44d063d0467a, type: 3}
